@@ -11,12 +11,15 @@ title: 新手GitHub Pages
         <div class="col-md-8">
             <p>最新文章</p>
             <ul>
-                　　　　{% for post in site.posts %}
-                　　　　　　
-                <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                </li>
-                　　　　{% endfor %}
-                　　
+                {% for post in site.posts %}                　　　　　　
+                <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}                　　
+            </ul>
+            <h1>Blog Posts</h1>
+            <ul class="posts">
+                {% for post in site.posts %}
+                <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
             </ul>
         </div>
         <div class="col-md-2"></div>
