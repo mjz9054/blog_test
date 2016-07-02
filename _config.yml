@@ -1,15 +1,1 @@
-markdown: kramdown
-highlighter: pygments
-permalink: /posts/:title.html
-excerpt_separator: "<!-- more -->"
-
-paginate: 8
-paginate_path: "posts/page:num"
-timezone: America/Los_Angeles
-
-collections:
-  docs:
-    output: true
-
-gems:
- - jekyll-paginate
+baseurl:/blog_test
