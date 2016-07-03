@@ -7,7 +7,7 @@ title: MutilpartResolver&PropertiesPlaceHolder
 
 ### 1.Spring 文件上传
 
-#### MultipartResolver Spring中用于文件上传的解析器
+####   MultipartResolver Spring中用于文件上传的解析器
 
 ```java
 <bean id="multipartResolver"class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
@@ -15,7 +15,7 @@ title: MutilpartResolver&PropertiesPlaceHolder
 </bean>
 ```
 
-#### html标签中需要制定文件类型，即entype="multipart/form-data"
+####   html标签中需要制定文件类型，即entype="multipart/form-data"
 
 ```java
 <form method="post" action="upload.html" enctype="multipart/form-data">
