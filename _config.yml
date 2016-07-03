@@ -1,4 +1,7 @@
 baseurl: /blog_test
+pygments: true
+safe: true
+auto: true
 markdown: redcarpet
 redcarpet:
-    extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
+    extensions: [ "fenced_code_blocks", "hard_wrap","autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify","no_intra_emphasis"]

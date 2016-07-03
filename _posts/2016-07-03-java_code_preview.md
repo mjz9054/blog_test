@@ -13,6 +13,12 @@ public static void main(String[] args){
 }
 ```
 
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+
 
 
 
