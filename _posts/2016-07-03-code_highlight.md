@@ -17,9 +17,9 @@ title: GitHub Pages 代码高亮
 
 ### 1.配置_config.yml
 
-> markdown: redcarpet
-  redcarpet:
-      extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
+    markdown: redcarpet
+    redcarpet:
+        extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
 
 
 ### 2.引入语法高亮的css文件
@@ -27,5 +27,7 @@ title: GitHub Pages 代码高亮
     <link href="{{ site.baseurl }}/css/syntax.css" rel="stylesheet" type="text/css">
 
 ---
+
+`通过修改css文件，应用不同的高亮配色方案`
 
 
