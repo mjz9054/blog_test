@@ -26,8 +26,8 @@ title: GitHub Pages 代码高亮
 
     <link href="{{ site.baseurl }}/css/syntax.css" rel="stylesheet" type="text/css">
 
----
-
 *注：通过修改css文件，应用不同的高亮配色方案*
+
+---
 
 
