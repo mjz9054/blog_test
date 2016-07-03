@@ -20,24 +20,22 @@
 </head>
 　　
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-md-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <!-- Blog Entries Column -->
+            <div class="col-md-8">
+                {% unless page.title_hidden %}
+                <h1>{{ page.title }}</h1>
+                <info datetime="{{ page.date | date: '%Y-%m-%d'  }}">
+                    {{ page.date | date: "%b %d, %Y" }}
+                </info>
+                {% endunless %}
+                {{ content }}
+            </div>
+            <div class="col-md-2"></div>
         </div>
-        <!-- Blog Entries Column -->
-        <div class="col-md-8">
-            {% unless page.title_hidden %}
-            <h1>{{ page.title }}</h1>
-            <info datetime="{{ page.date | date: '%Y-%m-%d'  }}">
-                {{ page.date | date: "%b %d, %Y" }}
-            </info>
-            {% endunless %}
-            {{ content }}
-        </div>
-        <div class="col-md-2"></div>
     </div>
-</div>
-
 </body>
 　　
 </html>
