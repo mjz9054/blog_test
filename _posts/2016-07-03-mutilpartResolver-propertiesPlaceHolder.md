@@ -33,3 +33,5 @@ title: MutilpartResolver&PropertiesPlaceHolder
 
 properties文件中值的使用：value="${xxx.xxx}"
 ```
+
+{{ page.date | date: "%Y-%m-%d"  }}
