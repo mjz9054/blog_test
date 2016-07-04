@@ -5,11 +5,9 @@
     {% include nav.html %}
     <div class="container">
         <div class="row">
-            <div class="col-md-2">
-                {% include note_list.html %}
-            </div>
+            <div class="col-md-1"></div>
             <!-- Blog Entries Column -->
-            <div class="col-md-8">
+            <div class="col-md-9">
                 {% unless page.title_hidden %}
                 <h1>{{ page.title }}</h1>
                 <info datetime="{{ page.date | date: '%Y-%m-%d'  }}">
@@ -18,7 +16,7 @@
                 {% endunless %}
                 {{ content }}
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-md-2">{% include note_list.html %}</div>
         </div>
     </div>
     <script type="text/javascript">
