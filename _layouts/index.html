@@ -1,0 +1,31 @@
+<!DOCTYPE html>　　
+<html lang="en">　　
+{% include head.html %}
+<body>
+    {% include nav.html %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <!-- Blog Entries Column -->
+            <div class="col-md-8">
+                {% unless page.title_hidden %}
+                <h1>{{ page.title }}</h1>
+                <info datetime="{{ page.date | date: '%Y-%m-%d'  }}">
+                    {{ page.date | date: "%b %d, %Y" }}
+                </info>
+                {% endunless %}
+                {{ content }}
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('a[href^="http"]').each(function(){
+                $(this).attr('target','_blank');
+            });
+        });
+    </script>
+</body>
+　　
+</html>
