@@ -24,6 +24,9 @@
             $('a[href^="http"]').each(function(){
                 $(this).attr('target','_blank');
             });
+
+            <!--给图片节点添加父节点，使其居中-->
+            $('img').wrap('<div class="center"></div>');
         });
     </script>
 </body>
